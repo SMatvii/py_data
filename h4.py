@@ -1,0 +1,33 @@
+import numpy as np
+
+arr1 = np.arange(10, 20)
+print("Завдання 1:")
+print("Масив:", arr1)
+print("Сума:", arr1.sum())
+print("Середнє значення:", arr1.mean())
+print("Мінімальне значення:", arr1.min())
+print("Максимальне значення:", arr1.max())
+print()
+
+arr2 = np.random.rand(1000).astype(np.float64)
+print("Завдання 2:")
+print("Сума:", arr2.sum())
+print("Середнє значення:", arr2.mean())
+print("Мінімальне значення:", arr2.min())
+print("Максимальне значення:", arr2.max())
+print()
+
+arr3 = np.random.randint(1, 100, (5, 5))
+print("Завдання 3:")
+print("Масив 5x5:\n", arr3)
+print("Другий стовпець:", arr3[:, 1])
+print("Другий рядок:", arr3[1, :])
+print("Одновимірний масив:", arr3.flatten())
+print()
+
+arr4 = np.random.rand(500_000).astype(np.float64)
+print("Завдання 4:")
+print("Сума:", arr4.sum())
+print("Середнє значення:", arr4.mean())
+print("Мінімальне значення:", arr4.min())
+print("Максимальне значення:", arr4.max())
